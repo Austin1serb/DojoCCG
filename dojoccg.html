@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dojo CCG</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .card {
+      border: 1px solid #000;
+      width: 200px;
+      height: 150px;
+      padding: 10px;
+      margin: 10px;
+      display: inline-block;
+    }
+    .card h2 {
+      margin-top: 0;
+    }
+    .card p {
+      margin: 5px 0;
+    }
+    .button {
+      margin-top: 10px;
+    }
+    .actions {
+      margin-top: 20px;
+    }
+    .actions p {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" id="red-belt-ninja">
+          <h2>Red Belt Ninja</h2>
+          <p>Power: <span id="red-belt-ninja-power"></span></p>
+          <p>Resilience: <span id="red-belt-ninja-resilience"></span></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" id="black-belt-ninja">
+          <h2>Black Belt Ninja</h2>
+          <p>Power: <span id="black-belt-ninja-power"></span></p>
+          <p>Resilience: <span id="black-belt-ninja-resilience"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="btn btn-primary" onclick="playHardAlgorithm()">Play Hard Algorithm</button>
+      <button class="btn btn-primary" onclick="playUnhandledPromiseRejection()">Play Unhandled Promise Rejection</button>
+      <button class="btn btn-primary" onclick="playPairProgramming()">Play Pair Programming</button>
+      <button class="btn btn-danger" onclick="attack()">Attack</button>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="actions" id="actions"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="dojoccg.js"></script>
+</body>
+</html>
